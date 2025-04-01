@@ -1,0 +1,9 @@
+astropy
+numpy
+scipy
+matplotlib
+yattag
+configobj
+pytest
+pypeit==1.6.0
+tqdm
