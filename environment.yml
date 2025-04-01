@@ -1,4 +1,4 @@
-name: dbsp_drp
+name: ngps_pipe
 channels:
 - conda-forge
 - defaults

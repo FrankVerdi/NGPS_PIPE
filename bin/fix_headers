@@ -5,7 +5,7 @@ Fix RA, DEC, ANGLE, and GRATING headers of all
 """
 
 import sys
-from dbsp_drp import fix_headers
+from ngps_pipe import fix_headers
 
 if __name__ == "__main__":
     fix_headers.main(sys.argv[1], False, True)

@@ -7,4 +7,4 @@ requires = [
 build-backend = 'setuptools.build_meta'
 
 [tool.pytest.ini_options]
-testpaths = "dbsp_drp/tests"
+testpaths = "ngps_pipe/tests"
