@@ -15,7 +15,6 @@ from astropy.io import fits
 from astropy.table import Table, Column, Row
 
 import sys
-sys.path.insert(0, "/Users/Frank/Desktop/NGPS/PypeIt") 
 import pypeit
 
 from pypeit.pypeitsetup import PypeItSetup
