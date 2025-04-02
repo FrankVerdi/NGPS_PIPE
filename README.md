@@ -14,7 +14,7 @@ It adds several GUIs to allow for easier control of your reduction:
 
 ## Usage
 ```shell_session
-$ ngps_reduce -r /path/to/data/DBSP_YYYYMMDD -d /path/to/data/DBSP_YYYYMMDD_redux
+$ ngps_reduce -r /path/to/data/ /path/to/data/redux
     [-a {I,R}] [-i] [-m] [--debug] [-j N] [-p PARAMETER_FILE] [-t] [-c]
     [--splicing-interpolate-gaps]
 ```
