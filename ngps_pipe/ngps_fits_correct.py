@@ -11,6 +11,7 @@ def process_fits_files(input_dir, output_dir):
         input_dir (str): Path to the directory containing the input FITS files.
         output_dir (str): Path to the directory to save corrected FITS files.
     """
+    print("Fixing image order in raw fits files...")
     input_dir = Path(input_dir)
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -29,7 +30,7 @@ def process_fits_files(input_dir, output_dir):
 
             # Check if swap is needed
             if spec_id_1 == 'I' and spec_id_2 == 'R':
-                print(f"Swapping images in {fits_file.name}")
+                print(f"Swapping extensions in {fits_file.name}")
 
                 # Swap the data and headers
                 hdul[1].data, hdul[2].data = hdul[2].data, hdul[1].data

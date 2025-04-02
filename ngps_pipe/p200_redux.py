@@ -27,6 +27,7 @@ import tqdm
 from ngps_pipe import reduction, qa, fluxing, coadding, telluric, splicing
 from ngps_pipe import table_edit
 from ngps_pipe import fix_headers
+from ngps_pipe import ngps_fits_correct
 
 
 def entrypoint():
@@ -157,6 +158,8 @@ def main(args):
     qa_dict = {}
     qa_dict_R = {}
     qa_dict_I = {}
+
+    ngps_fits_correct.process_fits_files(args.root, args.root) # Process raw fits files to ensure correct SPEC_ID values in extensions 1 and 2.
 
     if args.parameter_file:
         R_user_config_lines = reduction.parse_pypeit_parameter_file(args.parameter_file, 'p200_ngps_R')
