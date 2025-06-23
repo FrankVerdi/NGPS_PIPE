@@ -5,7 +5,7 @@
 ## Description
 NGPS_PIPE is a Data Reduction Pipeline for Palomar's NGPS.
 It is built on top of [PypeIt](https://github.com/pypeit/PypeIt).
-NGPS_PIPE automates the reduction, fluxing, telluric correction, and combining of the red and blue sides of one night's
+NGPS_PIPE automates the reduction, fluxing, telluric correction, and combining of the R and I sides of one night's
 data.
 It adds several GUIs to allow for easier control of your reduction:
 - select which data to reduce, and verify the correctness of your FITS headers in an editable table GUI
