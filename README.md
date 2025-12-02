@@ -10,7 +10,6 @@ data.
 It adds several GUIs to allow for easier control of your reduction:
 - select which data to reduce, and verify the correctness of your FITS headers in an editable table GUI
 - manually place traces for a sort of manually "forced" spectroscopy with the `-m` option
-- after manually placing traces, manually select sky regions and tweak the FWHM of your manual traces
 
 ## Usage
 ```shell_session
